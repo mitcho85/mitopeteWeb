@@ -1,0 +1,173 @@
+/*
+Code snippet by maridlcrmn for Bootsnipp.com
+Follow me on Twitter @maridlcrmn
+*/
+body {
+    background-image: url("img/bk.png");
+    font-family: Harabara Mais Demo;
+}
+
+
+
+
+/* To load a custom font */
+@font-face {
+    font-family: 'Harabara Mais Demo'; /*a name to be used later*/
+    src: url('fonts/Harabara Mais Demo.otf'); /*URL to font*/
+    font-family: 'Orbitron Medium';
+    src: url('fonts/Orbitron/Orbitron Medium.ttf');
+}
+/* Sets the font family for the whole document */
+html *
+{
+   /*font-family: Harabara Mais Demo !important;*/
+   font-family: Orbitron Medium !important;
+}
+
+
+.navbar {
+    position: relative;
+    min-height: 50px !important;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+
+/* Header Name (Mitchell Topete) */
+a.navbar-brand{
+    font-size: 28px;
+    color: #fff !important;
+}
+
+/* image centering stuff */
+.rotate180 {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(270deg);
+}
+
+/* image centering stuff */
+.centerBlock{
+    display: table;
+    margin: 0 auto;
+}
+
+/* Row styling */
+.rowTwo{
+    margin-top: 3%;
+}
+/* Main Menu Elements */
+ul.nav.navbar-nav.navbar-right{
+    font-size: 18;
+
+}
+
+/* Set the font color for the content */
+.container{
+    color: #BDBDBD;
+}
+
+/* header styling */
+ p#paragraphHeader{
+    font-size: 36px !important;
+    text-align: center;
+ }
+/* Nav bar links underline if active page */
+#navLinkAbout{
+  
+    text-decoration: bold;
+    text-decoration: overline;
+}
+
+/* Label for subpage */
+#subPage{
+    font-size: 28px;
+}
+/* Vertical Line Styling */
+#verticalLine {
+    border-left: solid #222;
+}
+
+#hrPart{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+/* Text description */
+.descriptionText{
+    font-size: 22px;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* CSS Styling for header*/
+/*
+Code snippet by maridlcrmn for Bootsnipp.com
+Follow me on Twitter @maridlcrmn
+*/
+
+.navbar-brand { position: relative; z-index: 2; }
+
+/* Nav Bar mobile button */
+.navbar-inverse .navbar-toggle{
+    background-color: #c80a48 !important;
+    color: #fff;
+}
+.navbar-nav.navbar-right .btn { position: relative; z-index: 2; padding: 4px 20px; margin: 10px auto; transition: transform 0.3s; }
+
+.navbar .navbar-collapse { position: relative; overflow: hidden !important; }
+/*navbar .navbar-collapse .navbar-right > li:last-child { padding-left: 22px; }*/
+
+.navbar .nav-collapse { position: absolute; z-index: 1; top: 0; left: 0; right: 0; bottom: 0; margin: 0; padding-right: 120px; padding-left: 80px; width: 100%; }
+.navbar.navbar-default .nav-collapse { background-color: #f8f8f8; }
+.navbar.navbar-inverse .nav-collapse { background-color: #222; }
+.navbar .nav-collapse .navbar-form { border-width: 0; box-shadow: none; }
+.nav-collapse>li { float: right; }
+
+.btn.btn-circle { border-radius: 50px; }
+.btn.btn-outline { background-color: transparent; }
+
+.navbar-nav.navbar-right .btn:not(.collapsed) {
+    background-color: rgb(111, 84, 153);
+    border-color: rgb(111, 84, 153);
+    color: rgb(255, 255, 255);
+}
+
+.navbar.navbar-default .nav-collapse,
+.navbar.navbar-inverse .nav-collapse {
+    height: auto !important;
+    transition: transform 0.3s;
+    transform: translate(0px,-50px);
+}
+.navbar.navbar-default .nav-collapse.in,
+.navbar.navbar-inverse .nav-collapse.in {
+    transform: translate(0px,0px);
+}
+
+/* Mobile viewing Menu tab */
+@media screen and (max-width: 960px) {
+    .navbar .navbar-collapse .navbar-right > li:last-child { padding-left: 0px; padding-right: 15px; } 
+    
+    .navbar .nav-collapse { margin: 7.5px auto; padding: 0; }
+    .navbar .nav-collapse .navbar-form { margin: 0; }
+    .nav-collapse>li { float: none; }
+    
+    .navbar.navbar-default .nav-collapse,
+    .navbar.navbar-inverse .nav-collapse {
+        transform: translate(-100%,0px);
+    }
+    .navbar.navbar-default .nav-collapse.in,
+    .navbar.navbar-inverse .nav-collapse.in {
+        transform: translate(0px,0px);
+    }
+    
+    .navbar.navbar-default .nav-collapse.slide-down,
+    .navbar.navbar-inverse .nav-collapse.slide-down {
+        transform: translate(0px,-100%);
+    }
+    .navbar.navbar-default .nav-collapse.in.slide-down,
+    .navbar.navbar-inverse .nav-collapse.in.slide-down {
+        transform: translate(0px,0px);
+    }
+}

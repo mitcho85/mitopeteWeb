@@ -1,0 +1,338 @@
+/*
+Code snippet by maridlcrmn for Bootsnipp.com
+Follow me on Twitter @maridlcrmn
+*/
+body {
+    background-image: url("img/bk.png");`
+}
+
+/* To load a custom font */
+@font-face {
+    font-family: 'Orbitron Medium';
+    src: url('fonts/Orbitron/Orbitron Medium.ttf');
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"), local("OpenSans"), url("http://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2") format("woff2");
+  unicode-range: U+0-FF, U+131, U+152-153, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+  font-family: "glyphicons-halflings-regular";
+  src: url('fonts/glyphicons-halflings-regular.ttf');
+}
+
+
+/* Sets the font family for the whole document */
+html *
+{
+   /*font-family: Harabara Mais Demo !important;*/
+   font-family: Orbitron Medium !important;
+}
+
+
+.navbar {
+    position: relative;
+    min-height: 50px !important;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+
+/* Header Name (Mitchell Topete) */
+a.navbar-brand{
+    font-size: 18px;
+    color: #fff !important;
+}
+
+/* image centering stuff */
+.rotate180 {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(270deg);
+}
+
+/* image centering stuff */
+.centerBlock{
+    display: table;
+    margin: 0 auto;
+}
+
+/* Row styling */
+.rowTwo{
+  margin-top: 10%;
+}
+
+.rowFour{
+  margin-top: 5%;
+}
+
+.rowFive{
+  margin-top: -10%;
+}
+/* Main Menu Elements */
+ul.nav.navbar-nav.navbar-right{
+    font-size: 18;
+
+}
+
+/* Set the font color for the content */
+.container{
+    color: #BDBDBD;
+}
+
+#options{
+  font-family: Open Sans !important;
+}
+
+/* header styling */
+ p#paragraphHeader{
+    font-family: Open Sans !important;
+    font-size: 38px !important;
+    text-align: center;
+ }
+/* Nav bar links underline if active page */
+#navLinkActive{
+    text-decoration: bold;
+    text-decoration: overline;
+}
+
+/* Label for subpage */
+#subPage{
+    font-size: 28px;
+}
+/* Vertical Line Styling */
+#verticalLine {
+    border-left: solid #222;
+}
+
+#hrPart{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+/* Text description */
+.descriptionText{
+    font-family: Open Sans !important;
+    font-size: 24px;
+    margin-top: 5%;
+    /*margin-left: 5%;*/
+    margin-right: 5%;
+}
+
+.longParagraph{
+    font-family: Open Sans !important;
+    font-size: 16px !important;
+    margin-top: 3%;
+    /*margin-left: 5%;*/
+    margin-right: 5%;
+}
+
+.ucsdClass{
+  text-align: center;
+  font-size: 16px;
+  margin-top: -1%;
+}
+
+#paraHeader{
+  font-family: Open Sans !important;
+  font-size: 24px;
+  text-align: center;
+}
+
+#captions{
+  font-family: Open Sans !important;
+  background-color: black;
+}
+
+/* SOCIAL MEDIA STYLING */
+.social {
+    margin: 0;
+    margin-bottom: -8%;
+    padding: 0;
+}
+
+.social ul {
+    margin: 0;
+    padding: 5px;
+}
+
+.social ul li {
+    margin: 5px;
+    list-style: none outside none;
+    display: inline-block;
+}
+
+.social i {
+    width: 40px;
+    height: 40px;
+    color: #FFF;
+    background-color: #909AA0;
+    font-size: 22px;
+    font-family: FontAwesome !important;
+    text-align:center;
+    padding-top: 12px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+}
+
+.social i:hover {
+    color: #FFF;
+    text-decoration: none;
+    transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+}
+
+.social .fa-facebook:hover {
+    background: #4060A5;
+}
+
+.social .fa-github:hover {
+    background: #343434;
+}
+.social .fa-linkedin:hover {
+    background: #0094BC;
+}
+.social .fa-youtube:hover {
+    background: #FF1F25;
+}
+
+/* CSS Styling for header*/
+/*
+Code snippet by maridlcrmn for Bootsnipp.com
+Follow me on Twitter @maridlcrmn
+*/
+
+.navbar-brand { position: relative; z-index: 2; }
+
+/* Nav Bar mobile button */
+.navbar-inverse .navbar-toggle{
+    background-color: #c80a48 !important;
+    color: #fff;
+}
+.navbar-nav.navbar-right .btn { position: relative; z-index: 2; padding: 4px 20px; margin: 10px auto; transition: transform 0.3s; }
+
+.navbar .navbar-collapse { position: relative; overflow: hidden !important; }
+/*navbar .navbar-collapse .navbar-right > li:last-child { padding-left: 22px; }*/
+
+.navbar .nav-collapse { position: absolute; z-index: 1; top: 0; left: 0; right: 0; bottom: 0; margin: 0; padding-right: 120px; padding-left: 80px; width: 100%; }
+.navbar.navbar-default .nav-collapse { background-color: #f8f8f8; }
+.navbar.navbar-inverse .nav-collapse { background-color: #222; }
+.navbar .nav-collapse .navbar-form { border-width: 0; box-shadow: none; }
+.nav-collapse>li { float: right; }
+
+.btn.btn-circle { border-radius: 50px; }
+.btn.btn-outline { background-color: transparent; }
+
+.navbar-nav.navbar-right .btn:not(.collapsed) {
+    background-color: rgb(111, 84, 153);
+    border-color: rgb(111, 84, 153);
+    color: rgb(255, 255, 255);
+}
+
+.navbar.navbar-default .nav-collapse,
+.navbar.navbar-inverse .nav-collapse {
+    height: auto !important;
+    transition: transform 0.3s;
+    transform: translate(0px,-50px);
+}
+.navbar.navbar-default .nav-collapse.in,
+.navbar.navbar-inverse .nav-collapse.in {
+    transform: translate(0px,0px);
+}
+
+/* Mobile viewing Menu tab */
+@media screen and (max-width: 720px) {
+    .navbar .navbar-collapse .navbar-right > li:last-child { padding-left: 0px; padding-right: 15px; } 
+    
+    .navbar .nav-collapse { margin: 7.5px auto; padding: 0; }
+    .navbar .nav-collapse .navbar-form { margin: 0; }
+    .nav-collapse>li { float: none; }
+    
+    .navbar.navbar-default .nav-collapse,
+    .navbar.navbar-inverse .nav-collapse {
+        transform: translate(-100%,0px);
+    }
+    .navbar.navbar-default .nav-collapse.in,
+    .navbar.navbar-inverse .nav-collapse.in {
+        transform: translate(0px,0px);
+    }
+    
+    .navbar.navbar-default .nav-collapse.slide-down,
+    .navbar.navbar-inverse .nav-collapse.slide-down {
+        transform: translate(0px,-100%);
+    }
+    .navbar.navbar-default .nav-collapse.in.slide-down,
+    .navbar.navbar-inverse .nav-collapse.in.slide-down {
+        transform: translate(0px,0px);
+    }
+}
+
+/* Code for Work Page */
+.glyphicon{
+  font-family: glyphicons-halflings-regular;
+}
+
+#logo-base {
+  width: 325px; /* Your chosen height */
+  height: auto; /* Must be auto */
+  margin: 0 auto;
+}
+/* Logo image CSS */
+
+#logo-base img {
+  width: 100%; /* Must be 100% */
+  height: auto; /* Must be auto */
+  margin: 0 auto;
+}
+
+#logo-base-normal {
+  width: 600px; /* Your chosen height */
+  height: auto; /* Must be auto */
+  margin: 0 auto;
+}
+
+#logo-base-normal img{
+  width: 600px; /* Your chosen height */
+  height: 600px; /* Must be auto */
+  margin: 0 auto;
+}
+#phone_carousel{
+  width: 330px; 
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+#carousel_final_real{
+
+}
+
+
+/* This is to fix the next/prev chevrons*/
+.carousel-control .glyphicon,
+.carousel-control .icon-prev,
+.carousel-control .icon-next {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  font-family: glyphicons-halflings-regular !important;
+}
